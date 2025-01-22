@@ -7,8 +7,6 @@ def single_root_words(root_word, *other_words):
         el = el.lower()
         if el.find(root_word) >= 0 or root_word.find(el) >= 0:
             same_words.append(origin_word)
-        else:
-            continue
     return(same_words)
 
 result1 = single_root_words('rich', 'richiest', 'orichalcum', 'cheers', 'richies')
